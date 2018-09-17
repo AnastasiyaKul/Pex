@@ -4,6 +4,7 @@ body {
 	@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic');
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
+	color: white;
 }
 p {
 	margin: 0;
@@ -14,7 +15,24 @@ a {
 	text-decoration: none;
 }
 
-.start-page img{
+h1 {
+	padding: 0;
+	margin: 0;
+	font-size: 35px;
+	font-weight: none;
+}
+
+.main-text {
+	font-size: 16px;
+}
+
+.start-page {
+	width: 100%;
+	height: 820px;
+}
+
+.start-page img {
+	overflow: hidden;
 	width: 100%;
 	position: absolute;
 	z-index: -1;
@@ -38,6 +56,7 @@ a {
 
 .start-page .logo p {
 	padding-left: 45px;
+	padding-top: 2px;
 	color: white;
 	font-size: 12px;
 }
@@ -93,4 +112,138 @@ a {
 	width: 15px;
 	height: 15px;
 	z-index: 1;
+}
+
+.start-page .content p {
+	position: absolute;	
+	left: 170px;
+	top: 325px;
+	width: 550px;
+	text-align: right;
+	font-size: 50px;
+}
+
+.content button {
+	position: absolute;
+	top: 470px;
+	left: 500px;
+	display: inline-block;
+	background-color: #8824cd;
+	width: 215px;
+	height: 55px;
+	border-radius: 30px;
+	border: none;
+}
+
+.content button a {
+	color: white;
+	font-size: 18px;
+}
+
+.second-section {
+	height: 450px;
+	background-color: #2e3b4e;
+	padding-bottom: 20px;
+}
+
+.second-section ul {
+	list-style: none;
+	padding: 0;
+	padding-left: 240px;
+	padding-top: 120px;
+	margin: 0;
+}
+
+.second-section li {
+	display: inline-block;
+	float: left;
+	height: 135px;
+	width: 400px;
+	padding-right: 20px;
+}
+
+.second-section li .title-text {
+	padding-bottom: 20px;
+}
+
+.third-section {
+	height: 520px;
+	width: 100%;
+	overflow: hidden;
+	background: url(img/trird-section.jpg) no-repeat 100% 100%;
+
+	text-align: center;
+}
+
+.third-section .overlay {
+	background: rgba(160, 30, 40, 0.5);
+	width: 100%;
+	height: 100%;
+}
+
+.third-section .section-text {
+	display: block;
+	width: 600px;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 150px;
+	padding-left: 370px;
+}
+
+.third-section .main-text {
+	padding: 20px 30px 0 30px;
+}
+
+.third-section .third-section-button {
+	width: 250px;
+	height: 45px;
+	margin-top: 30px;
+	border: none;
+	border-radius: 30px;
+}
+
+.third-section .third-section-button a {
+	font-weight: bold;
+	color: rgb(194, 80, 105);
+	padding: 10px 30px;
+}
+
+.fourth-section {
+	width: 100%;
+	height: 480px;
+}
+
+.fourth-section img {
+	position: absolute;
+	text-align: left;
+	width: 570px;
+	height: 470px;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.fourth-section span {
+	display: block;
+	width: 680px;
+	margin-left: 660px;
+	padding-top: 100px;
+	color: #6b7a88;
+}
+
+.fourth-section .title-grey {
+	text-transform: uppercase;
+	font-seze: 20px;
+	font-weight: bold;
+}
+
+.fourth-section .description-font {
+	font-size: 18px;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	padding-right: 110px;
+}
+
+.fourth-section .comment-font {
+	font-size: 16px;
+	padding-right: 110px;
 }
