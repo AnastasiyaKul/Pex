@@ -11,6 +11,10 @@ p {
 	padding: 0;
 }
 
+button {
+	outline: none;
+}
+
 a {
 	text-decoration: none;
 }
@@ -140,6 +144,15 @@ h1 {
 	font-size: 18px;
 }
 
+.content button:hover {
+	box-shadow: 2px 2px 3px -1px white;
+}
+
+.content button:active {
+	box-shadow: none;
+	opacity: 0.9;
+}
+
 .second-section {
 	height: 450px;
 	background-color: #2e3b4e;
@@ -202,6 +215,15 @@ h1 {
 	border-radius: 30px;
 }
 
+.third-section button:hover {
+	box-shadow: 4px 4px 3px grey;
+}
+
+.third-section button:active {
+	box-shadow: none;
+	opacity: 0.9;
+}
+
 .third-section .third-section-button a {
 	font-weight: bold;
 	color: rgb(194, 80, 105);
@@ -210,7 +232,7 @@ h1 {
 
 .fourth-section {
 	width: 100%;
-	height: 480px;
+	height: 470px;
 }
 
 .fourth-section img {
@@ -230,20 +252,185 @@ h1 {
 	color: #6b7a88;
 }
 
-.fourth-section .title-grey {
+.title-grey {
 	text-transform: uppercase;
 	font-seze: 20px;
 	font-weight: bold;
 }
 
-.fourth-section .description-font {
+.description-font {
 	font-size: 18px;
 	padding-top: 15px;
 	padding-bottom: 20px;
 	padding-right: 110px;
 }
 
-.fourth-section .comment-font {
+.comment-font {
 	font-size: 16px;
 	padding-right: 110px;
+}
+
+.fifth-section {
+	width: 100%;
+	height: 480px;
+	background: url(img/fifth-section.png) no-repeat 100% 100%;
+	overflow: hidden;
+}
+
+.fifth-section .overlay {
+	background: rgba(136, 36, 205, 0.5);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.fifth-section .section-text {
+	width: 600px;
+	padding-top: 130px;
+	padding-left: 370px;
+}
+
+.fifth-section p {
+	padding: 20px;
+}
+
+.fifth-section .fifth-section-btn {
+	width: 230px;
+	height: 45px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 30px;
+	background-color: rgb(136, 36, 205);
+}
+
+.fifth-section .fifth-section-btn a {
+	font-weight: bold;
+	color: white;
+	padding: 10px 30px;
+}
+
+.fifth-section button:hover {
+	box-shadow: 2px 2px 3px white;
+}
+
+.fifth-section button:active {
+	box-shadow: none;
+	opacity: 0.9;
+}
+
+.six-section {
+	width: 100%;
+	height: 600px;
+	background: linear-gradient(0deg, rgba(30, 30, 30, 0.9), rgba(0, 0, 0, 0)), 
+	            url(img/six-section.png) no-repeat 100% 100%;
+	overflow: hidden;
+}
+
+.six-section .content-six {
+	padding-left: 170px;
+	padding-top: 300px;
+}
+
+.six-section .six-btn {
+	width: 160px;
+	height: 35px;
+	border: 1px solid white;
+	border-radius: 25px;
+	background-color: transparent;
+	margin-bottom: 30px;
+}
+
+.six-section .six-btn a {
+	padding: 10px 20px;
+	color: white;
+}
+
+.six-section button:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+	color: #e7526b;
+}
+
+.six-section button:active {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.six-section p {
+	display: inline-block;
+	padding-top: 40px;
+	padding-left: 70px;
+}
+
+.six-section .img-six {
+	margin-top: -40px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.six-section img {
+	margin-left: -30px;
+}
+
+.seven-section {
+	height: 470px;
+	width: 100%;
+}
+
+.seven-section span {
+	display: block;
+	width: 680px;
+	padding-top: 100px;
+	padding-left: 170px;
+	color: #6b7a88;
+}
+
+.seven-section img {
+	position: absolute;
+	margin-top: -326px;
+	right: 0;
+	width: 570px;
+	height: 470px;
+	overflow: hidden;
+}
+
+.footer {
+	width: 100%;
+	height: 100px;
+	background-color: #e7526b;
+}
+
+.footer p {
+	padding-left: 150px;
+	padding-top: 40px;
+	font-size: 18px;
+}
+
+.footer div {
+	display: inline-block;
+	height: 45px;
+	width: 45px;
+	margin-right: 10px;
+	margin-top: -30px;
+	border-radius: 10px;
+
+	background: url(img/sprite.png) no-repeat;
+	background-size: auto 75px;
+}
+
+.footer .social {
+	width: 100%;
+	margin-left: 1100px;
+}
+
+.footer .social-vk {
+	background-position: 5% 50%;
+}
+
+.footer .social-inst {
+	background-position: 50% 50%;
+}
+
+.footer .social-fb {
+	background-position: 95% 50%;
 }
